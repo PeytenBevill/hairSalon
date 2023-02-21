@@ -147,8 +147,10 @@ p.footer {
     font-size: 35px;
     background: transparent;
     border: none;
+    color: black;
   }
-  
+
+
 }
 
 @media (max-width: 597px) {

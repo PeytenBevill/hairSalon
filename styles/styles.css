@@ -248,6 +248,18 @@ p.footer {
     text-align: center;
   }
   
+  .featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.one {
+    margin-bottom: 2%;
+  }
+
+
 }
 
 @media (max-width: 597px) {
