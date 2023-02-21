@@ -42,6 +42,18 @@ nav {
   justify-content: center;
   align-items: center;
 }
+/* button {
+  display: none;
+  visibility: hidden;
+}
+
+input {
+  visibility: hidden;
+}
+
+ul {
+  visibility: hidden;
+} */
 
 nav a {
   background-color: rgb(182, 189, 222);
@@ -52,6 +64,18 @@ nav a {
   color: black;
   margin: 5px 20px;
   font-size: large;
+}
+
+.menu {
+  display: none;
+}
+
+.navLinks {
+  width: 100%;
+}
+
+.dropdown {
+  visibility: hidden;
 }
 
 /* main */
@@ -81,13 +105,21 @@ nav a {
 
 
 .boxTwo {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5%;
 }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 section img {
   height: 300px;
   width: 300px;
@@ -101,9 +133,6 @@ section img:hover {
 }
 
 section p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: larger;
 }
 
@@ -151,12 +180,8 @@ p.footer {
 }
 
 .fa {
-  /* padding: 20px; */
-  /* font-size: 30px; */
-  /* width: 50px; */
   text-align: center;
   text-decoration: none;
-  /* margin: 5px 2px; */
 }
 
 .fa:hover {
@@ -175,4 +200,39 @@ p.footer {
 .fa-instagram {
   /* background: #125688; */
   color: white;
+}
+
+
+/* media */
+
+@media (max-width: 1135px) {
+  nav a {
+    width: 10%;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 2px;
+    background-color: rgba(182, 189, 222, 0.8);
+  }
+
+  .navLinks {
+    display: none;
+    position: relative;
+  }
+
+  .navLinks.open {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .menu {
+    display: block;
+    font-size: 35px;
+    background: transparent;
+    border: none;
+  }
+  
 }
