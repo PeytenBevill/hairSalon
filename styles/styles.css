@@ -42,18 +42,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-/* button {
-  display: none;
-  visibility: hidden;
-}
-
-input {
-  visibility: hidden;
-}
-
-ul {
-  visibility: hidden;
-} */
 
 nav a {
   background-color: rgb(182, 189, 222);
@@ -87,9 +75,10 @@ nav a {
   margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: none;
 }
 
-.boxOne img {
+.boxOne img.first {
   width: auto;
   height: auto;
   max-width: 600px;
@@ -206,12 +195,18 @@ p.footer {
 /* media */
 
 @media (max-width: 1135px) {
+  .logo {
+    font-size: 50px;
+  }
+  .logo h1 {
+    bottom: 0px;
+  }
   nav a {
     width: 10%;
     text-align: center;
     margin: 0px;
     margin-bottom: 2px;
-    background-color: rgba(182, 189, 222, 0.8);
+    background-color: rgb(182, 189, 222);
   }
 
   .navLinks {
@@ -234,5 +229,29 @@ p.footer {
     background: transparent;
     border: none;
   }
+  .boxOne {
+    background-image: url(https://images.unsplash.com/photo-1595475884562-073c30d45670?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+    height: auto;
+    width: auto; 
+    /* object-fit: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    background-color: transparent;
+  }
+  img.first {
+    display: none;
+  }
+
+  .boxOne h1 {
+    text-align: center;
+  }
   
+}
+
+@media (max-width: 597px) {
+  nav a {
+    font-size: 11px;
+  }
 }

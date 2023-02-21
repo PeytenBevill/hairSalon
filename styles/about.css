@@ -53,6 +53,18 @@ nav a {
   margin: 5px 20px;
   font-size: large;
 }
+
+.menu {
+  display: none;
+}
+
+.navLinks {
+  width: 100%;
+}
+
+.dropdown {
+  visibility: hidden;
+}
 main {
   margin-top: 5%;
   display: flex;
@@ -101,6 +113,47 @@ p.footer {
 
 
 /* media */
-@media (min-width: 597px) {
+
+@media (max-width: 1135px) {
+  .logo {
+    font-size: 40px;
+  }
+  .logo h1 {
+    bottom: 0px;
+  }
+  nav a {
+    width: 10%;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 2px;
+    background-color: rgb(182, 189, 222);
+  }
+
+  .navLinks {
+    display: none;
+    position: relative;
+  }
+
+  .navLinks.open {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .menu {
+    display: block;
+    font-size: 35px;
+    background: transparent;
+    border: none;
+  }
   
+}
+
+@media (max-width: 597px) {
+  nav a {
+    font-size: 11px;
+  }
 }

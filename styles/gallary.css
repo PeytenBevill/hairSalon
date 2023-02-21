@@ -54,6 +54,18 @@ nav a {
   font-size: large;
 }
 
+.menu {
+  display: none;
+}
+
+.navLinks {
+  width: 100%;
+}
+
+.dropdown {
+  visibility: hidden;
+}
+
 ul {
   margin-top: 5%;
   margin-left: 20%;
@@ -116,4 +128,54 @@ p.footer {
 .fa-instagram {
   /* background: #125688; */
   color: white;
+}
+
+/* media */
+
+@media (max-width: 1135px) {
+  .logo {
+    font-size: 40px;
+  }
+  .logo h1 {
+    bottom: 0px;
+  }
+  nav a {
+    width: 10%;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 2px;
+    background-color: rgb(182, 189, 222);
+  }
+
+  .navLinks {
+    display: none;
+    position: relative;
+  }
+
+  .navLinks.open {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .menu {
+    display: block;
+    font-size: 35px;
+    background: transparent;
+    border: none;
+  }
+
+  ul {
+    z-index: -1;
+  }
+  
+}
+
+@media (max-width: 597px) {
+  nav a {
+    font-size: 11px;
+  }
 }
