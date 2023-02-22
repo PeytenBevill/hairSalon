@@ -173,7 +173,15 @@ p.footer {
     border: none;
     color: black;
   }
-  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partOne {
+    margin-bottom: 5%;
+  }
+
 }
 
 @media (max-width: 597px) {
