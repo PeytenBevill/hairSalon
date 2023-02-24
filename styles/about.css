@@ -54,6 +54,11 @@ nav a {
   font-size: large;
 }
 
+nav a:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
+
 .menu {
   display: none;
 }
