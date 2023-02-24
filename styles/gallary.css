@@ -138,6 +138,7 @@ p.footer {
   }
   .logo h1 {
     bottom: 0px;
+    position: relative;
   }
   nav a {
     width: 10%;

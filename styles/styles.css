@@ -195,11 +195,13 @@ p.footer {
 /* media */
 
 @media (max-width: 1135px) {
+
   .logo {
     font-size: 40px;
   }
   .logo h1 {
     bottom: 0px;
+    position: relative;
   }
   nav a {
     width: 10%;
