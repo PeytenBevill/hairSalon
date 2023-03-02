@@ -1,10 +1,13 @@
 body {
-  margin: 2%;
+  /* margin: 2%; */
+  /* see styles.css for why i'm choosing to remove this. */
 }
 
 .mainContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  /* this ensures the footer goes to the bottom */
 }
 
 header {
@@ -77,6 +80,8 @@ main {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin-top: 5%;
+  padding: 80px;
+  /* adding because i removed the margin */
 }
 
 .partOne {

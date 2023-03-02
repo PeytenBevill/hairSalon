@@ -1,5 +1,10 @@
 body {
-  margin: 2%;
+  /* margin: 2%; */
+  /* at first i was okay with this feature. it's a style. but then i noticed in the about section, the footer not hitting the bottom */
+  /* i added height: 100vh; to the .mainContainer, but that won't work because of the margin. it makes the body height 100vh + 2% for the top and 2% for the bottom. which means you'll get a scroll */
+  /* a solution would be to remove this margin. the footer and header/nav would touch the top and bottom. */
+  /* then i'd add padding to your main element: padding: 0 20px; */
+  /* this is a suggestion! all up to you */
 }
 
 .mainContainer {
@@ -72,6 +77,10 @@ nav a:hover {
 }
 
 /* main */
+main {
+  padding: 0 20px;
+  /*  ^ based on what I wrote up top */
+}
 
 .boxOne {
   background-image: linear-gradient(#f3f3f1, #dbdcd7);
@@ -124,10 +133,14 @@ section img {
 section img:hover {
   cursor: pointer;
   opacity: 85%;
+  /* while i love this feature, it's a bit impractical. because there's a pointer, i expect to click and be taken somewhere or something to happen. */
+  /* I think i'd keep the opacity but remove the pointer so the user gets the lil effect on hover but won't expect to be taken somewhere */
 }
 
 section p {
   font-size: larger;
+  /* I'd add some space between the img container and the text under. i played with what you see below */
+  margin: 20px 0 40px;
 }
 
 .featured {
