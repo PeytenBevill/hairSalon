@@ -1,10 +1,13 @@
 body {
-  margin: 2%;
+   /* margin: 2%; */
+  /* see styles.css for why i'm choosing to remove this. */
 }
 
 .mainContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  /* this ensures the footer goes to the bottom */
 }
 
 header {
@@ -74,6 +77,7 @@ nav a:hover {
 main {
   margin: 5%;
   margin-bottom: 10%;
+  padding: 80px;
 }
 
 footer {
@@ -164,6 +168,7 @@ p.footer {
     font-size: 11px;
   }
   footer {
-    margin-top: 50%;
+    /* margin-top: 50%; */
+    /* dont need this anymore */
   }
 }

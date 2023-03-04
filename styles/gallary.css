@@ -1,10 +1,13 @@
 body {
-  margin: 2%;
+  /* margin: 2%; */
+   /* see styles.css for why i'm choosing to remove this. */
 }
 
 .mainContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  /* this ensures the footer goes to the bottom */
 }
 
 header {
@@ -78,7 +81,15 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
+  gap: 14px;
+  /* changing to center and adding gap to space between elements. */
+  /* this ensures your images always stays center no matter screen size */
+  /* you can also write gap like: 
+    row-gap: 14px;
+    column-gap: 14px; 
+    and adjust the sizes for row and column if you want them different*/
   align-items: center;
 }
 

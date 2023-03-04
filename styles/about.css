@@ -1,10 +1,13 @@
 body {
-  margin: 2%;
+  /* margin: 2%; */
+  /* see styles.css for why i'm choosing to remove this. */
 }
 
 .mainContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  /* this ensures the footer goes to the bottom */
 }
 
 header {
@@ -74,7 +77,10 @@ main {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  padding: 0 80px;
+  /* adding for styling purposes after setting mainContainer to 100vh */
 }
 footer {
   margin-top: 10%;
