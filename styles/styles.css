@@ -131,7 +131,7 @@ section img {
 }
 
 section img:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   opacity: 85%;
   /* while i love this feature, it's a bit impractical. because there's a pointer, i expect to click and be taken somewhere or something to happen. */
   /* I think i'd keep the opacity but remove the pointer so the user gets the lil effect on hover but won't expect to be taken somewhere */
